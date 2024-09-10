@@ -1,11 +1,11 @@
-my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
-initial = 0
-while initial < len(my_list):
-    if my_list[initial] == 0:
-        initial += 1
-    if my_list[initial] > 0:
-        print(my_list[initial])
-        initial += 1
-        continue
-    if my_list[initial] < 0:
-        break
+my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]  # Список чисел
+initial = 0  # Начальное значение индекса
+while initial < len(my_list):  # Когда начальное значение индекса,меньше чем значение символов
+    if my_list[initial] == 0:  # Если начальное символов приравниваться к 0
+        initial += 1  # Присваиваем + 1
+    if my_list[initial] > 0:  # Если значение индекса Больше чем 0
+        print(my_list[initial])  # Печать значений Лист
+        initial += 1  # Присваиваем + 1
+        continue  # Продолжаем (До тех пока не прервется цикл)
+    if my_list[initial] < 0:  # Если значение меньше 0
+        break  # Прерываем цикл
